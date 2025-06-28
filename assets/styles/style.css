@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+:root {
+    --header-hero-background: #0f172a;
+    --hero-button: #3b82f6;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Newsreader', serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 16px 0;
+    background: var(--header-hero-background);
+    color: white;
+    font-family: 'Manrope', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+nav .logo {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+nav .links {
+    display: flex;
+    gap: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.hero-section {
+    width: 100%;
+    background: var(--header-hero-background);
+    display: flex;
+    justify-content: center;
+    padding: 48px 24px;
+}
+
+.hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-left h1 {
+    margin-bottom: 12px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    color: white;
+}
+
+.hero-left p {
+    margin-bottom: 16px;
+    max-width: 480px;
+    font-weight: 200;
+    line-height: 22px;
+    color: white;
+}
+
+.hero-left button {
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    background: var(--hero-button);
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero-right .imageholder img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feature-section {
+    width: 100%;
+    padding: 32px 24px 84px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-section h1 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.feature-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    width: 260px;
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card .imageholder {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cbd5e1;
+}
+
+.card .imageholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #334155;
+}
+
+/* QUOTE SECTION */
+.quote-section {
+    width: 100%;
+    background-color: #e2e8f0;
+    padding: 56px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box {
+    max-width: 800px;
+    width: 100%;
+}
+
+.quote-box .quote p {
+    font-family: 'Manrope', sans-serif;
+    font-style: italic;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #1e293b;
+}
+
+.quote-box .quote-source {
+    text-align: center;
+    font-size: 24px;
+    color: #475569;
+    margin: 0 0 12px 296px;
+}
+
+/* CTA */
+.call-to-action {
+    width: 100%;
+    padding: 48px 24px;
+    background: #0f172a;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-box {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.cta-box .text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.cta-box h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.cta-box p {
+    font-size: 16px;
+    color: #e2e8f0;
+    max-width: 480px;
+}
+
+.cta-box button {
+    padding: 12px 32px;
+    border-radius: 8px;
+    border: none;
+    background: var(--hero-button);
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    background: #1e293b;
+    color: white;
+    font-size: 14px;
+}
